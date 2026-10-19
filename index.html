@@ -1,0 +1,81 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lit Wallet</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f7fa;
+      color: #172033;
+    }
+    header {
+      background: #ffffff;
+      padding: 22px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .logo { font-size: 25px; font-weight: 800; }
+    .logo span { color: #f7931a; }
+    main { max-width: 500px; margin: auto; padding: 22px; }
+    .label { color: #667085; font-size: 14px; }
+    .balance {
+      background: #172033;
+      color: white;
+      padding: 26px;
+      border-radius: 22px;
+      margin-top: 20px;
+    }
+    .amount { font-size: 34px; font-weight: 750; margin: 12px 0; }
+    .demo { color: #fbbf24; font-size: 12px; }
+    .actions { display: flex; gap: 12px; margin: 20px 0; }
+    button {
+      flex: 1;
+      padding: 15px 8px;
+      border: 0;
+      border-radius: 13px;
+      background: #f7931a;
+      color: #172033;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 18px;
+      margin-top: 18px;
+    }
+    .activity { color: #667085; line-height: 1.6; }
+    footer { text-align: center; padding: 28px; color: #667085; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">lit<span>.</span> wallet</div>
+  </header>
+  <main>
+    <p class="label">Your demo balance</p>
+    <div class="balance">
+      <div class="label">Total Bitcoin balance</div>
+      <div class="amount">₿ 0.000000</div>
+      <div class="demo">DEMO ONLY · No real funds</div>
+    </div>
+    <div class="actions">
+      <button onclick="alert('Receiving Bitcoin is not available in this demo yet.')">Receive</button>
+      <button onclick="alert('Sending Bitcoin is not available in this demo yet.')">Send</button>
+    </div>
+    <div class="section">
+      <h3>Wallet activity</h3>
+      <p class="activity">Your transactions will appear here when wallet functionality is added.</p>
+    </div>
+    <div class="section">
+      <h3>About Lit Wallet</h3>
+      <p class="activity">A simple Bitcoin wallet project, built step by step.</p>
+    </div>
+  </main>
+  <footer>Lit Wallet · Prototype v1</footer>
+</body>
+</html>
